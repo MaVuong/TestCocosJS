@@ -16,7 +16,7 @@ static bool clickBuyBtn = NO;
     NSLog(@"bat dau load cac goi mua ban");
     
     [[IAPShare sharedHelper].iap requestProductsWithCompletion:^(SKProductsRequest* request,SKProductsResponse* response){
-         if(response > 0 ) {
+         if([response.products count] > 0 ) {
              for (SKProduct *p in [IAPShare sharedHelper].iap.products) {
                  NSLog(@"Price: %@",[[IAPShare sharedHelper].iap getLocalePrice:p]);
                  NSLog(@"Title: %@",p.localizedTitle);

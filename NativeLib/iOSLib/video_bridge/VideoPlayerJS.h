@@ -4,5 +4,6 @@
 
 @interface VideoPlayerJS : NSObject
 @property (nonatomic, retain) AVPlayerViewController *playerViewController;
+@property (nonatomic, retain) UIImageView *homeButton;
 -(void)openVideoPlayer:(NSString*)stringVideoName;
 @end

@@ -24,7 +24,9 @@ var Utils = {
     rateApp: function () {
         var urlRateApp = "";
         if (cc.sys.os == cc.sys.OS_IOS) {
-            urlRateApp = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=" + iOS_appid + "&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software";
+            // urlRateApp = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=" + iOS_appid + "&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software";
+            urlRateApp = "https://itunes.apple.com/us/app/abc-kids-phonics-learn-abc-letter-tracing-games/id1213910464?ls=1&mt=8&action=write-review";
+
 
         } else {// la android
             urlRateApp = "market://details?id=" + Android_appid;
